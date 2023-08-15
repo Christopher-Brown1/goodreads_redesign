@@ -1,0 +1,148 @@
+body {
+  background-color: #ffffff;
+}
+
+body html {
+  height: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: peachpuff;
+  z-index: 10;
+}
+
+.navigation {
+  width: auto;
+  display: flex;
+}
+
+.inline-block {
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.logo {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+
+}
+
+.logo h1 {
+  font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 36px;
+  text-align: start;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 16px 40px;
+  margin-left: 64px;
+}
+
+.logo a,
+h1 {
+  text-decoration: none;
+  color: #000000;
+}
+
+.inline {}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.topnav a {
+  color: #000000;
+  text-align: center;
+  padding: 18px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: '';
+}
+
+.topnav img {
+  padding: 18px 32px;
+}
+
+.heroImg {
+  max-height: 300px;
+  width: 100%;
+}
+
+.bodyContent {
+  display: flex;
+  justify-content: center;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+
+.shelf {
+  display: flex;
+  flex-direction: column;
+}
+
+.shelf p {}
+
+.bookDeck {}
+
+.bookTab {}
+
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  width: 34%;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.readingStatus {
+  display: flex;
+  justify-content: center;
+}
+
+.bookStatus {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bookCover {
+  height: 200px;
+  width: 150px;
+}
+
+.bookStatus p {}
+
+.progressBanner {
+  position: absolute;
+  right: -4%;
+  bottom: 15%;
+  height: 100px;
+  width: 75px;
+}
+
+.profileButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileButtons button {
+  width: 50%;
+}

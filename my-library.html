@@ -10,12 +10,12 @@
 </head>
 
 <body>
-  <header class="navigation">
+  <header>
     <div class="inline-block logo">
       <a href="index.html">
         <h1>Goodreads</h1>
       </a>
-      <nav class="inline-block">
+      <nav class="inline">
         <div class="topnav">
           <a href="my-library.html">My Library</a>
           <a href="browse.html">Browse</a>
@@ -27,25 +27,44 @@
     </div>
   </header>
 
-  <img class="heroImg" src="/images/tempHeroImg.png">
+  <div class="heroImg"></div>
+
   <div class="bodyContent">
     <div class="leftPanel">
+      <div class="browseNav">
+        <h1>My Library</h1>
+        <div class="tabThree">
+          <button>Books</button>
+          <button>Audiobooks</button>
+          <button>Podcasts</button>
+        </div>
+        <div class="pageSearch"></div>
+      </div>
       <div class="shelf">
-        <p>Based on your library</p>
+        <p>Currently Reading</p>
         <div class="bookDeck">
           <div class="bookTab"></div>
           <div class="bookTab"></div>
           <div class="bookTab"></div>
           <div class="bookTab"></div>
         </div>
-      </div>
-      <div class="shelf">
-        <p>Your Friends' Current Reads</p>
-        <div class="bookDeck">
-          <div class="bookTab"></div>
-          <div class="bookTab"></div>
-          <div class="bookTab"></div>
-          <div class="bookTab"></div>
+        <div class="shelf">
+          <p>Want to Read</p>
+          <div class="bookDeck">
+            <div class="bookTab"></div>
+            <div class="bookTab"></div>
+            <div class="bookTab"></div>
+            <div class="bookTab"></div>
+          </div>
+        </div>
+        <div class="shelf">
+          <p>UI/UX Books</p>
+          <div class="bookDeck">
+            <div class="bookTab"></div>
+            <div class="bookTab"></div>
+            <div class="bookTab"></div>
+            <div class="bookTab"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -57,14 +76,14 @@
           <p>User Name</p>
           <p>Books read in 2023</p>
           <p>10/50</p>
-          <button>Update Goal</button>
         </div>
       </div>
+
       <div class="readingStatus">
         <div class="bookStatus">
-          <img class="bookCover" src="https://edit.org/photos/img/blog/d3s-design-book-covers.jpg-840.jpg">
+          <img src="###">
           <p>Book Title</p>
-          <img class="progressBanner" src="###">
+          <img src="###">
         </div>
         <div class="bookStatus">
           <img src="###">
@@ -77,13 +96,13 @@
           <img src="###">
         </div>
       </div>
-      <div class="profileButtons">
-        <button>View My Library</button>
-        <button>View Friends</button>
+      <button>View Friends</button>
+      <p>My Genres</p>
+      <div class="genres">
       </div>
     </div>
   </div>
-  </div>
+
 </body>
 
 </html>
