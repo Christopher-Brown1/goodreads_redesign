@@ -6,61 +6,138 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goodreads Redesign</title>
-  <link rel="stylesheet" type="text/css" href="css/shared-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 </head>
 
 <body>
   <header class="navigation">
     <div class="inline-block logo">
       <a href="index.html">
-        <h1>Goodreads</h1>
+        <h1>goodreads</h1>
       </a>
-      <nav class="inline">
+      <nav>
         <div class="topnav">
           <a href="my-library.html">My Library</a>
           <a href="browse.html">Browse</a>
-          <a href="community.html">Community</a>
-          <img src="###" href="x">
-          <img src="###" href="x">
+          <a href="###">Community</a>
+          <img class="navSearch" src="/images/search.png">
+          <img class="navProfile" src="/images/userpicture.png" href="x">
         </div>
       </nav>
     </div>
   </header>
 
+
   <div class="bodyContent">
     <div class="leftPanel">
-      <div class="browseNav">
+      <div class="pageNav">
         <h1>Browse Books</h1>
-        <div class="tabTwo">
-          <button>Goodreads</button>
-          <button>Friends</button>
-        </div>
+        <div class="toggle"></div>
         <div class="pageSearch"></div>
       </div>
       <div class="shelf">
-        <p>Favorite Genres</p>
+        <h2>2022 Goodreads Choice Picks</h2>
         <div class="bookDeck">
-          <div class="bookTab"></div>
-          <div class="bookTab"></div>
-          <div class="bookTab"></div>
-          <div class="bookTab"></div>
-        </div>
-        <div class="shelf">
-          <p>UX/UI Books</p>
-          <div class="bookDeck">
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
+          <div class="bookTab">
+            <img src="/images/bbook1.png">
+            <p>Tomorrow and Tomorrow and Tomorrow</p>
+            <p>by Gabrielle Zevin</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook2.png">
+            <p>Remarkably Bright Creatures</p>
+            <p>by Shelby Van Pelt</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook3.png">
+            <p>Wish you Were Here</p>
+            <p>by Jodi Picoult</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook4.png">
+            <p>The Winners</p>
+            <p>by Fredrik Backman</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook5.png">
+            <p>To Paradise</p>
+            <p>by Hanya Yanagihara</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook6.png">
+            <p>True Biz</p>
+            <p>by Sara Novic</p>
           </div>
         </div>
-        <div class="shelf">
-          <p>Memoirs</p>
-          <div class="bookDeck">
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
+      </div>
+      <div class="shelf">
+        <h2>Your Friends' Current Reads</h2>
+        <div class="bookDeck">
+          <div class="bookTab">
+            <img src="/images/bbook7.png">
+            <p>Don't Make me Think</p>
+            <p>by Steve King</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook8.png">
+            <p>UX and UI Strategy</p>
+            <p>by Pamala B. Deacon</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook9.png">
+            <p>The Elements of User Experience</p>
+            <p>by Jesse James Garrett</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook10.png">
+            <p>Articulating Design Decisions</p>
+            <p>by Tom Greever</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook11.png">
+            <p>UI+UX Design</p>
+            <p>by Luca Panzarella</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook12.png">
+            <p>The Design of Everyday Things</p>
+            <p>by Don Norman</p>
+          </div>
+        </div>
+      </div>
+      <div class="shelf">
+        <h2>Another Bookshelf Name</h2>
+        <div class="bookDeck">
+          <div class="bookTab">
+            <img src="/images/bbook13.png">
+            <p>The Office BFFs</p>
+            <p>by Jenna Fischer</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook14.png">
+            <p>I am Malala</p>
+            <p>by Malala Yousafzai</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook15.png">
+            <p>Dear Girls</p>
+            <p>by Ali Wong</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook16.png">
+            <p>Born a Crime</p>
+            <p>by Trevor Noah</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook17.png">
+            <p>First to the Front</p>
+            <p>by Lorissa Rinehart</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/bbook18.png">
+            <p>Data Baby</p>
+            <p>by Susannah Breslin</p>
           </div>
         </div>
       </div>
@@ -68,43 +145,48 @@
 
     <div class="rightPanel">
       <div class="userInfo">
-        <img src="###">
+        <img class="profilePic" src="/images/author1.png">
         <div class="rightPanelText">
-          <p>Author Name</p>
-          <p>Information about the author</p>
+          <h2>Arthur Conan Doyle</h2>
+          <p>Sir Arthur Ignatius Conan Doyle was born the third of ten siblings on 22 May 1859 in Edinburgh, Scotland.
+            His father, Charles Altamont Doyle, a talented illustrator, was born in England of Irish descent... see more
+          </p>
         </div>
       </div>
       <div class="shelfSmall">
-        <p>Books by Author</p>
-        <div class="bookDeckSmall">
-          <div class="bookTabSmall">
-            <img src=" ###">
-            <p>Book Title</p>
+        <h2>Books by Author</h2>
+        <div class="bookDeck">
+          <div class="bookTab">
+            <img src="/images/bbook19.png">
+            <p>A Study in Scarlet</p>
           </div>
-          <div class="bookTabSmall">
-            <img src=" ###">
-            <p>Book Title</p>
+          <div class="bookTab">
+            <img src="/images/bbook20.png">
+            <p>The Sign of Four</p>
           </div>
-          <div class="bookTabSmall">
-            <img src=" ###">
-            <p>Book Title</p>
+          <div class="bookTab">
+            <img src="/images/bbook21.png">
+            <p>The Adventures of Sherlock Holmes</p>
           </div>
         </div>
       </div>
       <div class="shelfSmall">
-        <p>Similar Books</p>
-        <div class="bookDeckSmall">
-          <div class="bookTabSmall">
-            <img src=" ###">
-            <p>Book Title</p>
+        <h2>Similar Books</h2>
+        <div class="bookDeck">
+          <div class="bookTab">
+            <img src="/images/bbook22.png">
+            <p>The Forgotten 500</p>
+            <p>by Gregory A. Freeman</p>
           </div>
-          <div class="bookTabSmall">
-            <img src=" ###">
-            <p>Book Title</p>
+          <div class="bookTab">
+            <img src="/images/bbook23.png">
+            <p>Silence Before Dawn</p>
+            <p>by Amanda Lees</p>
           </div>
-          <div class="bookTabSmall">
-            <img src=" ###">
-            <p>Book Title</p>
+          <div class="bookTab">
+            <img src="/images/bbook24.png">
+            <p>I Only Wanted to Live</p>
+            <p>by Arie Tamir</p>
           </div>
         </div>
       </div>

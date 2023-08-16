@@ -6,22 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goodreads Redesign</title>
-  <link rel="stylesheet" type="text/css" href="css/shared-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 </head>
 
 <body>
-  <header>
+  <header class="navigation">
     <div class="inline-block logo">
       <a href="index.html">
-        <h1>Goodreads</h1>
+        <h1>goodreads</h1>
       </a>
-      <nav class="inline">
+      <nav>
         <div class="topnav">
           <a href="my-library.html">My Library</a>
           <a href="browse.html">Browse</a>
-          <a href="community.html">Community</a>
-          <img src="###" href="x">
-          <img src="###" href="x">
+          <a href="###">Community</a>
+          <img class="navSearch" src="/images/search.png">
+          <img class="navProfile" src="/images/userpicture.png" href="x">
         </div>
       </nav>
     </div>
@@ -31,39 +32,113 @@
 
   <div class="bodyContent">
     <div class="leftPanel">
-      <div class="browseNav">
+      <div class="pageNav">
         <h1>My Library</h1>
-        <div class="tabThree">
-          <button>Books</button>
-          <button>Audiobooks</button>
-          <button>Podcasts</button>
-        </div>
+        <div class="toggle"></div>
         <div class="pageSearch"></div>
       </div>
       <div class="shelf">
-        <p>Currently Reading</p>
+        <h2>Currently Reading</h2>
         <div class="bookDeck">
-          <div class="bookTab"></div>
-          <div class="bookTab"></div>
-          <div class="bookTab"></div>
-          <div class="bookTab"></div>
-        </div>
-        <div class="shelf">
-          <p>Want to Read</p>
-          <div class="bookDeck">
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
+          <div class="bookTab">
+            <img src="/images/lbook1.png">
+            <p>The Help</p>
+            <p>by Kathryn Stockett</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook2.png">
+            <p>Harry Potter</p>
+            <p>by J.K. Rowling</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook3.png">
+            <p>Atomic Habits</p>
+            <p>by James Clear</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook4.png">
+            <p>Dune</p>
+            <p>by Frank Herbert</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook5.png">
+            <p>The Infernoe</p>
+            <p>by Dante Alighieri</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook6.png">
+            <p>Think Again</p>
+            <p>by Adam Grant</p>
           </div>
         </div>
-        <div class="shelf">
-          <p>UI/UX Books</p>
-          <div class="bookDeck">
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
-            <div class="bookTab"></div>
+      </div>
+      <div class="shelf">
+        <h2>Want to Read</h2>
+        <div class="bookDeck">
+          <div class="bookTab">
+            <img src="/images/lbook7.png">
+            <p>Persuasion</p>
+            <p>by Jane Austen</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook8.png">
+            <p>The Count of Monte Cristo</p>
+            <p>by Alexandre Dumas</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook9.png">
+            <p>Circe</p>
+            <p>by Madeline Miller</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook10.png">
+            <p>The War of the Worlds</p>
+            <p>by H.G. Wells</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook11.png">
+            <p>The Iliad</p>
+            <p>by Homer</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook12.png">
+            <p>The Midnight Library</p>
+            <p>by Matt Haig</p>
+          </div>
+        </div>
+      </div>
+      <div class="shelf">
+        <h2>UI/UX Books</h2>
+        <div class="bookDeck">
+          <div class="bookTab">
+            <img src="/images/lbook13.png">
+            <p>Don't Make Me Think</p>
+            <p>by Steve King</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook14.png">
+            <p>UX and UI Strategy</p>
+            <p>by Pamala B. Deacon</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook15.png">
+            <p>The Elements of User Experience</p>
+            <p>by Jesse James Garrett</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook16.png">
+            <p>Articulating Design Decisions</p>
+            <p>by Tom Greever</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook17.png">
+            <p>UI+UX Design</p>
+            <p>by Luca Panzarella</p>
+          </div>
+          <div class="bookTab">
+            <img src="/images/lbook18.png">
+            <p>The Design of Everyday Things</p>
+            <p>by Don Norman</p>
           </div>
         </div>
       </div>
@@ -71,35 +146,32 @@
 
     <div class="rightPanel">
       <div class="userInfo">
-        <img src="###">
+        <img class="profilePic" src="/images/userpicture.png">
         <div class="rightPanelText">
-          <p>User Name</p>
+          <h2>Sophie McCall</h2>
           <p>Books read in 2023</p>
           <p>10/50</p>
+          <button>Update Goal</button>
         </div>
       </div>
-
-      <div class="readingStatus">
-        <div class="bookStatus">
-          <img src="###">
-          <p>Book Title</p>
-          <img src="###">
-        </div>
-        <div class="bookStatus">
-          <img src="###">
-          <p>Book Title</p>
-          <img src="###">
-        </div>
-        <div class="bookStatus">
-          <img src="###">
-          <p>Book Title</p>
-          <img src="###">
-        </div>
+      <br>
+      <br>
+      <div class="profileButtons">
+        <button>View Friends</button>
       </div>
-      <button>View Friends</button>
-      <p>My Genres</p>
+      <h2>My Genres</h2>
       <div class="genres">
+        <button>Non Fiction</button>
+        <button>Fantasy</button>
+        <button>Biographies</button>
+        <button>Historical Fiction</button>
+        <button>Memoir</button>
+        <button>Sci-Fi</button>
+        <button>Self Improvement</button>
+        <button>Fiction</button>
+        <button>Romance</button>
       </div>
+      <button>Add Genres</button>
     </div>
   </div>
 
