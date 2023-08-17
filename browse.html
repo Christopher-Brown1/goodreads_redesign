@@ -12,9 +12,9 @@
 
 <body>
   <header class="navigation">
-    <div class="inline-block logo">
+    <div class="inline-block">
       <a href="index.html">
-        <h1>goodreads</h1>
+        <img class="logo" src="/images/logo.png">
       </a>
       <nav>
         <div class="topnav">
@@ -33,8 +33,19 @@
     <div class="leftPanel">
       <div class="pageNav">
         <h1>Browse Books</h1>
-        <div class="toggle"></div>
-        <div class="pageSearch"></div>
+        <div class="toggle">
+          <span class="toggleButton active">
+            <a href="browse.html">Browse</a>
+          </span>
+          <span class="toggleButton">
+            <a href="browsefriends.html">Friends</a>
+          </span>
+        </div>
+        <div class="customInput">
+          <input type="text" placeholder="Search Browse">
+          <span style="position:absolute">
+            <img src="/images/searchsmall.png"></span>
+        </div>
       </div>
       <div class="shelf">
         <h2>2022 Goodreads Choice Picks</h2>
@@ -69,6 +80,10 @@
             <p>True Biz</p>
             <p>by Sara Novic</p>
           </div>
+        </div>
+        <div class="expandButton">
+          <p class="expand">Expand</p>
+          <img class="expandArrow" src="/images/expandarrow.png">
         </div>
       </div>
       <div class="shelf">
@@ -105,6 +120,10 @@
             <p>by Don Norman</p>
           </div>
         </div>
+        <div class="expandButton">
+          <p class="expand">Expand</p>
+          <img class="expandArrow" src="/images/expandarrow.png">
+        </div>
       </div>
       <div class="shelf">
         <h2>Another Bookshelf Name</h2>
@@ -139,6 +158,10 @@
             <p>Data Baby</p>
             <p>by Susannah Breslin</p>
           </div>
+        </div>
+        <div class="expandButton">
+          <p class="expand">Expand</p>
+          <img class="expandArrow" src="/images/expandarrow.png">
         </div>
       </div>
     </div>
@@ -192,6 +215,36 @@
       </div>
     </div>
   </div>
+  <footer>
+    <div class="fContent">
+      <div class="fNav">
+        <p class="fNavHead">Company</p>
+        <p class="fNavItem">About Us</p>
+        <p class="fNavItem">Ads</p>
+        <p class="fNavItem">Help</p>
+      </div>
+      <div class="fNav">
+        <p class="fNavHead">Work With Us</p>
+        <p class="fNavItem">Careers</p>
+        <p class="fNavItem">Authors</p>
+        <p class="fNavItem">Advertise</p>
+      </div>
+      <div class="fNav">
+        <p class="fNavHead">Connect</p>
+        <span>
+          <a>
+            <img src="images/instagram.png" href="x">
+            <img src="images/twitter.png" href="x">
+            <img src="images/facebook.png" href="x">
+            <img src="images/linkedin.png" href="x">
+          </a>
+        </span>
+      </div>
+    </div>
+    <div id="copyright">
+      <p>© 2023 Goodreads, Inc.</p>
+    </div>
+  </footer>
 
 </body>
 
