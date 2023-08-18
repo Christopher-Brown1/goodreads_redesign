@@ -622,6 +622,33 @@ footer {
   letter-spacing: 1.6px;
 }
 
+.goalModal .goalAdjustment {
+  display: flex;
+}
+
+.goalModal .goalChangeButton {
+  background: transparent;
+  border: none;
+  color: #F5F2EA;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 1.65px;
+  margin: 0;
+}
+
+#goalInput {
+  background: transparent;
+  border: 1px solid #F5F2EA;
+  color: #F5F2EA;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  height: 60px;
+  letter-spacing: 1.4px;
+  width: 60px;
+  margin: 0 8px;
+}
+
 .goalModal p {
   color: #F5F2EA;
   text-align: center;
@@ -631,9 +658,10 @@ footer {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.4px;
+  margin: 0;
 }
 
-.update {
+.goalModal .update {
   border: 0;
   background-color: #FF9E74;
   border: 1px solid #372213;
@@ -645,12 +673,13 @@ footer {
   letter-spacing: 0.7px;
   padding: 10px 22px;
   /* margin: 24px 35px 0; */
+  margin-top: 11px;
   width: 80%;
   text-transform: uppercase;
 
 }
 
-.cancel {
+.goalModal .cancel {
   border: 0;
   background: #B3B3B3;
   border: 1px solid #372213;
@@ -662,15 +691,12 @@ footer {
   letter-spacing: 0.7px;
   padding: 10px 22px;
   /* margin: 24px 35px 0; */
+  margin-top: 4px;
   width: 80%;
   text-transform: uppercase;
 }
 
 @media(max-width: 600px) {
-  html {
-    width: 100%;
-  }
-
   .bodyContent {
     display: flex;
     flex-direction: column;

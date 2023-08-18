@@ -195,7 +195,7 @@
         <div class="rightPanelText" id="expandableDiv">
           <h2>Sophie McCall</h2>
           <p>Books read in 2023</p>
-          <p>10/50</p>
+          <p>10/<span id="goalLabel">50</span></p>
           <button id="myBtn">Update Goal</button>
         </div>
       </div>
@@ -264,7 +264,11 @@
     <div class="modal-content">
       <div class="goalModal">
         <h2>2023 Reading Challenge</h2>
-        <div class="goalAdjustment">Goal adjuster goes here</div>
+        <div class="goalAdjustment">
+          <button class="goalChangeButton">-</button>
+          <input id="goalInput" value="50" />
+          <button class="goalChangeButton">+</button>
+        </div>
         <p>Books</p>
         <button class="update">Update</button>
         <button class="cancel">Cancel</button>
@@ -282,14 +286,43 @@
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
+    var cancelBtn = document.getElementsByClassName("cancel")[0];
+    var updateBtn = document.getElementsByClassName("update")[0];
+    var minusBtn = document.getElementsByClassName("goalChangeButton")[0];
+    var plusBtn = document.getElementsByClassName("goalChangeButton")[1];
 
     // When the user clicks on the button, open the modal
     btn.onclick = function () {
       modal.style.display = "block";
     }
 
-    // When the user clicks on <span> (x), close the modal
+    // When the user clicks on <span> (x) or (Cancel), close the modal
     span.onclick = function () {
+      modal.style.display = "none";
+    }
+    cancelBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When user clicks (+/-), update the value of the input
+    minusBtn.onclick = function () {
+      var goalInput = document.getElementById('goalInput');
+
+      goalInput.value = --goalInput.value;
+    }
+    plusBtn.onclick = function () {
+      var goalInput = document.getElementById('goalInput');
+
+      goalInput.value = ++goalInput.value;
+    }
+
+    // When user clicks (Update), update the goal on right panel and close modal
+    updateBtn.onclick = function () {
+      var goalInput = document.getElementById('goalInput');
+      var goalLabel = document.getElementById('goalLabel');
+
+      goalLabel.innerText = goalInput.value;
+      // The next line closes the modal after updating the goal. Can be removed this is isn't preferred.
       modal.style.display = "none";
     }
 
