@@ -696,10 +696,20 @@ footer {
   text-transform: uppercase;
 }
 
-@media(max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .bodyContent {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .logo {
+    width: 200px;
+    height: 57px;
+    margin-left: 32px;
+  }
+
+  .leftPanel {
+    width: 100%;
   }
 }
