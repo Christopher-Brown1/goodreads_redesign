@@ -23,6 +23,9 @@
           <a href="###">Community</a>
           <img class="navSearch" src="/images/search.png">
           <img class="navProfile" src="/images/userpicture.png" href="x">
+          <div class="mobileHeader">
+            <button onclick={openMenu()} class="hamburger">Menu</button>
+          </div>
         </div>
       </nav>
     </div>
@@ -330,6 +333,19 @@
     window.onclick = function (event) {
       if (event.target == modal) {
         modal.style.display = "none";
+      }
+    }
+
+    const menu = document.querySelector(".menu");
+    let open;
+
+    function openMenu() {
+      if (open) {
+        menu.style.display = "none";
+        open = false;
+      } else if (!open) {
+        menu.style.display = "block";
+        open = true;
       }
     }
   </script>

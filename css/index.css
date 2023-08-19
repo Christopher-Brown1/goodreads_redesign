@@ -696,7 +696,58 @@ footer {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 600px) {
+.topnav .icon {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.mobileHeader {
+  display: none;
+}
+
+@media screen and (min-width: 601px) {
+  .menu {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .mobileHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 16px;
+  }
+
+  .topnav a {
+    display: none;
+  }
+
+  .topnav img {
+    display: none;
+  }
+
+  .list {
+    grid-auto-flow: row;
+    list-style-type: none;
+    row-gap: 40px;
+    column-gap: 0;
+    justify-items: center;
+  }
+
   .bodyContent {
     display: flex;
     flex-direction: column;
