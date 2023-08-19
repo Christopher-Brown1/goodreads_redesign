@@ -8,32 +8,32 @@ var newBooks = [
   {
     title: 'The Non-Designer\'s Design Book',
     author: 'by Robin Williams',
-    src: '/images/lbook19.png',
+    src: './images/lbook19.png',
   },
   {
     title: 'UX/UI Design',
     author: 'by Thomas Charles',
-    src: '/images/lbook20.png',
+    src: './images/lbook20.png',
   },
   {
     title: 'UX Magic',
     author: 'by Daniel Rosenberg',
-    src: '/images/lbook21.png',
+    src: './images/lbook21.png',
   },
   {
     title: 'Bottlenecks',
     author: 'by David C. Evans',
-    src: '/images/lbook22.png',
+    src: './images/lbook22.png',
   },
   {
     title: 'The Lean Startup',
     author: 'by Eric Ries',
-    src: '/images/lbook23.png',
+    src: './images/lbook23.png',
   },
   {
     title: 'The User Experience Guide Book for Product Managers',
     author: 'by Marcin Treder',
-    src: '/images/lbook24.png',
+    src: './images/lbook24.png',
   }
 ]
 var expandButton = document.getElementById('expandBtn');
@@ -46,7 +46,7 @@ expandButton.onclick = function () {
       expandableDiv.removeChild(expandableDiv.lastChild);
     }
     expandText.innerHTML = "Expand"
-    expandChevron.src = '/images/expandarrow.png'
+    expandChevron.src = './images/expandarrow.png'
   } else {
     newBooks.forEach(book => {
       const bookTab = document.createElement('div');
@@ -64,7 +64,7 @@ expandButton.onclick = function () {
       expandableDiv.appendChild(bookTab);
     })
     expandText.innerHTML = "Close"
-    expandChevron.src = '/images/closearrow.png'
+    expandChevron.src = './images/closearrow.png'
   }
 }
 
